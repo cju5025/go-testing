@@ -8,6 +8,8 @@ func main() {
 	fmt.Println(Hello("Colter"))
 }
 
+const greeting = "Hello, "
+
 func Hello(name string) string {
-	return "Hello, " + name + "."
+	return greeting + name
 }
