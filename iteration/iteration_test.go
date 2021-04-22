@@ -29,10 +29,9 @@ func TestRepeat(t *testing.T) {
 	})
 }
 
+// go test -bench=. is the command to run a benchmark test
 func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Repeat("a", 5)
 	}
 }
-
-// go test -bench=. is the command to run a benchmark test
