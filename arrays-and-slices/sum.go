@@ -20,8 +20,8 @@ func SumAll(numbersToSum ...[]int) []int {
 	lengthOfNumbersToSum := len(numbersToSum)
 	sums := make([]int, lengthOfNumbersToSum)
 
-	for i, numbers := range numbersToSum {
-		sums[i] = SumSlice(numbers)
+	for _, numbers := range numbersToSum {
+		sums = append(sums, SumSlice(numbers))
 	}
 
 	return sums
